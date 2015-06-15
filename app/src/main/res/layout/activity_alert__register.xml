@@ -7,13 +7,15 @@
     tools:context="com.example.karthiksharma.myapplication.Alert_Register">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@android:dimen/dialog_min_width_minor"
+        android:layout_height="@dimen/abc_action_bar_progress_bar_size"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="Large Text"
         android:id="@+id/textView8"
+        android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginRight="106dp"
+        android:layout_marginEnd="106dp"
+        android:layout_marginTop="93dp" />
 </RelativeLayout>

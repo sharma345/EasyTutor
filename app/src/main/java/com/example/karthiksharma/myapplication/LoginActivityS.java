@@ -14,18 +14,20 @@ import static com.example.karthiksharma.myapplication.R.layout.login_student;
  * Created by Karthik Sharma on 10-06-2015.
  */
 public class LoginActivityS extends Activity {
-    Button C;
+    Button streg;
+    Button stsinbutton;
     @Override
 
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(login_student);
-        C=(Button)findViewById(R.id.button3);
-        C.setOnClickListener(new View.OnClickListener() {
+        stsinbutton=(Button) findViewById(R.id.stsinbutton);
+        streg=(Button)findViewById(R.id.streg);
+        streg.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent I=new Intent(LoginActivityS.this,registration_s.class);
+                Intent I = new Intent(LoginActivityS.this, registration_s.class);
                 startActivity(I);
             }
         });

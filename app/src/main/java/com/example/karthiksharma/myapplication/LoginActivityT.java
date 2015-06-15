@@ -12,17 +12,19 @@ import android.widget.EditText;
  * Created by Karthik Sharma on 09-06-2015.
  */
 public class LoginActivityT extends Activity {
-   Button C;
-    EditText T;
+   Button tutreg;
+    EditText tutemail,tutpass;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.login_tutor);
-        C=(Button)findViewById(R.id.button3);
+        tutreg=(Button)findViewById(R.id.tutreg);
+        tutemail=(EditText) findViewById(R.id.tutemail);
+        tutpass=(EditText) findViewById(R.id.tutpass);
 
 
-        C.setOnClickListener(new OnClickListener() {
+        tutreg.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent I=new Intent(LoginActivityT.this,RegistrationT.class);
